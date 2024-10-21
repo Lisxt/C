@@ -4,4 +4,23 @@ reprovado (média menor do que 40). Caso esteja em exame o programa deve pedir a
 exame (0 a 100) e informar se o aluno está aprovado (média mais nota do exame maior ou 
 igual a 100) ou reprovado (média mais nota do exame menor do que 100).*/
 
-#in
+#include <stdio.h>
+
+int main(){
+   
+    float n1, n2;
+
+    printf("Quais são as notas parciais?\n");
+    scanf("%f %f", &n1, &n2);
+
+    float media = n1 + n2;
+
+    if (media >= 70) {
+        printf("Aluno Aprovado!!");
+    } else if (media <= 69 && media >= 40) {
+        printf("Aluno vai para o exame final!!");
+    } else {
+        printf("Aluno Reprovado!!");
+    }
+
+}
